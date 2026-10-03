@@ -14,7 +14,7 @@ def cargar_recursos():
     one_hot_transformer = joblib.load('one_hot_columns.joblib')
     scaler = joblib.load('min_max_scaler.joblib')
     # Usamos bagging_model_optimizado.joblib que es el que existe en el entorno
-    model = joblib.load('bagging_model_optimizado.joblib')
+    model = joblib.load('bagging_model.joblib')
     return one_hot_transformer, scaler, model
 
 try:
